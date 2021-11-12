@@ -1,3 +1,4 @@
+// Three ways of creating functions
 /**
  *
  * string type str in function params
@@ -21,7 +22,20 @@ const helloWorld = (str) => {
  * its the part of ES5 and ES6
  * @param {string} str
  */
-helloWorldFunction("Bye bynder!!!");
+// helloWorldFunction("Bye bynder!!!");
 function helloWorldFunction(str) {
   alert(str);
 }
+
+/**
+ * string type str in function params
+ * function helloWorldAnonymousFunction
+ * return message/greetings
+ * this is anonymous function which can not be called before decleration
+ * its the part of ES6
+ * @param {string} str
+ */
+const helloWorldAnonymousFunction = function (str) {
+  alert(str);
+};
+helloWorldAnonymousFunction("Hi there");
