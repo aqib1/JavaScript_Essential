@@ -9,7 +9,8 @@ const backpack = new Backpack(
   15,
   11,
   12,
-  true
+  true,
+  "December 5, 2018 15:00:00 PST"
 );
 
 console.log("Backpack object : ", backpack);
@@ -21,3 +22,7 @@ console.log("Presets io : ", presets.io[0]);
 const state = new State(1, "progress", "In progress", "id:1,name:aqib");
 state.setId(11);
 console.log("state object :", state);
+
+// global objects
+console.log(backpack.dateAcquired);
+console.log("Days passed: ", backpack.backpackAge());
